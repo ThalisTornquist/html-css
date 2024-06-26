@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo</title>
+    <style>
+    body{
+    background-image: linear-gradient(to right, rgb(185, 184, 184), rgb(138, 138, 138));
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;}
+    div{
+    background-color: blueviolet;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    }
+    div:hover{
+        background-color: rgb(168, 43, 226);
+        height: 60px;
+    }
+    div > p {
+        display: none;
+        
+    }
+    div:hover > p{
+        display: block;
+        font-size: 0.5em;
+       
+    }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover com div</h1>
+    <p>podemos criar um paragrafo filho dentro da div e para selecionar ele usamos ">" </p>
+    <div id="d1">Passe o Mouse Aqui!!!
+        <p>Clicando aqui voce poderá comprar tal item.</p>
+    </div>
+    <a href="pseudo.html">Página Anterior</a>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style> mark {background-color: rgb(143, 255, 120);} </style>
+</head>
+<body><h1>Imagens de tamanhos diferentes</h1>
+    <p>Para usarmos imagens que se adaptam conforme o tamanho da tela do dispositivo usamos a tag:<mark><strong>&lt;picture&gt;</strong>
+    </mark><br> Exemplo:</p>
+<picture>
+   <source media="(max-width: 750px)" srcset="imagens/300x300.jpg" type="image/jpg">
+    <source media="(max-width: 1050px)" srcset="imagens/700x700.png" type="image/png">
+    <img src="imagens/1000x1000.png" alt="imagem grande">
+</picture>
+    <p>Para usarmos audios usamos a tag: <mark>&lt;audio&gt;</mark><br>
+Podemos fazer um codigo desse jeito: <code>
+    <pre>
+        &lt;audio src="midia/Girl On Top - Amy Lynn & the Honeymen.mp3" controls autoplay&gt;&lt;/audio&gt;
+    </pre>
+</code>
+    </p>
+<p>Escute:</p>
+    <audio src="midia/Girl On Top - Amy Lynn & the Honeymen.mp3" controls autoplay></audio>
+    <p>Porém não é o ideal, o ideal é termos varios formatos como mp3, wav ou ogg. <br> 
+    usando a tag audio e os sources manuais. Olhe abaixo:</p>
+<audio preload="metadata" autoplay controls>
+    <source src="midia/Girl On Top - Amy Lynn & the Honeymen.mp3" type="audio/mpeg">
+    <source src="midia/Girl On Top - Amy Lynn & the Honeymen.wav" type="audio/wav">
+    <source src="midia/Girl On Top - Amy Lynn & the Honeymen.ogg" type="audio/ogg">
+</audio><br>
+<a href="midia/Girl On Top - Amy Lynn & the Honeymen.mp3"><mark>Clique para baixar.</mark></a>
+</body>
+</html>
