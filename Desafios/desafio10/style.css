@@ -88,7 +88,8 @@ nav{
     color: #31c772;
     background-color: transparent;
     transition-duration:0.5s; 
-    font-size: 17px;
+    font-size: 0.9em;
+    margin: 0px 4px;
 }
 .nav:hover{
     color: #003a1c;
