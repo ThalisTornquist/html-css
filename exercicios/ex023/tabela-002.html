@@ -12,31 +12,51 @@
             background-color: rgba(219, 219, 219, 0.979);
             width: 650px;
             margin: 100px;
-        }
-        thead, tfoot{
-            background-color: rgb(63, 63, 63);
-            color: white;
-            font-size: 2em;
-        }        
+            position: relative;
+        }       
         th, td{
             border: 2px solid black;
             padding: 10px;
         }
-        .num{
-            text-align: right;
+        caption{
+            font-weight: bold;
+            font-size: 1.3em;
+            background-color: rgb(160, 160, 160);
+            font-variant: small-caps;
+            padding: 5px;
+        }
+        thead, tfoot{
+            background-color: rgb(63, 63, 63);
+            color: white;
+            font-size: 1.6em;} 
+        thead{
+            position: sticky;
+            background-color: rgb(63, 63, 63);
+            top: -1px;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(185, 185, 185);
         }
         tfoot{
             font-size: 1.5em;
             text-align: center;
         }
+        .num{
+            text-align: right;
+        }
+        .dado{
+            width: 201px;
+        }
     </style>
 </head>
 <body>
     <table>
+        <caption>População dos Estados Brasileiros</caption>
+        
         <thead>
             <tr>
                 <th>Estado</th>
-                <th>População</th>
+                <th class="dado">População</th>
             </tr>
         </thead>
         
