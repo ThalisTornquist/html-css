@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 2em;
+        }
+        td, tr, th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .c1{
+            background-color: blanchedalmond;
+        }
+        .c2{
+            background-color: beige;
+        }
+        .c4{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+            <col class="c1">
+            <col class="c2" span="2">
+            <col class="c4">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>40</td>
+                <td>Pedreiro</td>
+            </tr>
+            <tr>
+                <td>Amanda</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Marcos</td>
+                <td>M</td>
+                <td>33</td>
+                <td>Agricultor</td>
+            </tr>
+            <tr>
+                <td>Giovana</td>
+                <td>F</td>
+                <td>27</td>
+                <td>Programadora</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
