@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <form action="cadastro.php">
+        <div>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" minlength="5" maxlength="30" placeholder="nome completo" required>
+        </div>
+
+        <div>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail" minlength="8" maxlength="30" placeholder="neymar@gmail.com" required>
+        </div>
+
+        <div>
+            <label for="inum">Número:</label>
+            <input type="tel" name="num" id="inum" minlength="8" placeholder="(xx)xxxxx-xxxx" required>
+        </div>
+
+    </form>
+</body>
+</html>
