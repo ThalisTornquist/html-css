@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body{
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(199, 199, 199);
+        }
+        fieldset{
+            background-color: rgb(163, 163, 163);
+            border: 2px solid black;
+            width: 250px;
+            margin-bottom: 30px;
+        }
+        legend{
+            background-color: rgb(179, 179, 179);
+            border: 2px solid black;
+        }
+        input{
+            width: 18px;
+            height: 18px;
+            background-color: white;
+        }
+        .botao{
+            width: 100px;
+            height: 30px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Radio e Checkbox</h1>
+    <form action="cadastro.php">
+        
+        <fieldset>
+
+            <legend><strong>Sexo</strong></legend>
+
+
+            <input type="radio" name="sexo" id="isxmas" value="masculino">
+            <label for="isxmas">Masculino</label><br>
+
+            <input type="radio" name="sexo" id="isxfen" value="femenino">
+            <label for="isxfen">Femenino</label>
+
+        </fieldset>
+        
+        
+        <fieldset>
+            
+            <legend><strong>Esportes favoritos</strong></legend>
+            
+            
+            <input type="checkbox" name="fut" id="ifut"> 
+            <label for="ifut">Futebol</label><br>
+            
+            <input type="checkbox" name="bas" id="ibas">  
+            <label for="ibas"> Basquete</label><br>
+
+            <input type="checkbox" name="vol" id="ivol">
+            <label for="ivol"> Volei </label><br>
+
+            <input type="checkbox" name="ping" id="iping"> 
+            <label for="iping"> Ping pong</label><br>
+
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar" class="botao">
+            <input type="reset" value="Limpar" class="botao">
+        </div>
+
+    </form>
+</body>
+</html>
