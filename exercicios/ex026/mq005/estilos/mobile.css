@@ -40,6 +40,27 @@ li{
     border: none;
 }
 
+header > div{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burger:hover{
+    background-color: white;
+    color: black;
+}
+
+.material-symbols-outlined{
+    display: block;
+}
+
+menu{
+    display: none;
+}
+
 a.menu{
     text-decoration: none;
     color: white;

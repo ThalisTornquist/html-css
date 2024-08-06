@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>media query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/mobile.css" media="all">
     <link rel="stylesheet" href="estilos/print.css" media="print">
     <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
@@ -13,7 +14,10 @@
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <div id="burger" class="material-symbols-outlined" onclick="ClickMenu()">menu</div>
+            
+            
+        <menu id="script">
             <ul>
                 <a href="#" class="menu">
                     <li id="borda">opção 1</li>
@@ -45,5 +49,14 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt numquam fugiat maiores velit animi quis quisquam tempora consequuntur ipsa corporis facere doloribus, et modi. Vitae nobis dolor nulla minus animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nulla aliquam, et maxime vitae consequuntur quis harum, fugiat tenetur eius, inventore at ratione ullam ducimus molestias delectus iste voluptas laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit id reiciendis dolorum sunt facere nam nobis at cumque, assumenda laborum dolores culpa, ratione dolore illum voluptatibus nemo ducimus quibusdam voluptatem!</p>
         </article>
     </main>
+    <script>
+        function ClickMenu(){
+           if (script.style.display == 'block') {
+                script.style.display = 'none'
+           } else{
+            script.style.display = 'block'
+           }  
+        }
+    </script>
 </body>
 </html>
