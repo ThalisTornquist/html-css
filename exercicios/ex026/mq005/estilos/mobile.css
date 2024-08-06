@@ -28,14 +28,26 @@ header > h1{
 
 li{
     list-style: none;
-    display: inline-block;
+    display: block;
     padding: 10px;
     background-color: rgb(92, 92, 92);
     color: white;
+    text-align: center;
+    border-top: 2px solid gray;
 }
-li > a{
+
+#borda{
+    border: none;
+}
+
+a.menu{
     text-decoration: none;
     color: white;
+    text-align: center;
+}
+
+li:hover{
+    background-color: gray;
 }
 
 main{
