@@ -1,1 +1,14 @@
 @charset "UTF-8";
+
+#burger{
+    display: none;
+}
+
+#script{
+    display: block;
+}
+
+li{
+    display: inline-block;
+    border: none;
+}
