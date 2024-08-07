@@ -74,10 +74,10 @@ li:hover{
 main{
     background-color: white;
     text-align: justify;
-    max-width: 800px;
     margin: 15px auto;
     padding: 15px;
     border-radius: 15px;
+    width: 90vw;
 }
 
 main h2{

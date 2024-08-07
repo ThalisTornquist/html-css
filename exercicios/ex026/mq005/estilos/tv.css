@@ -12,3 +12,7 @@ li{
     display: inline-block;
     border: none;
 }
+
+main{
+    width: 800px;
+}
