@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="estilos/pc.css" media="screen and (min-width: 993px) and (max-width: 1500px)">
     <link rel="stylesheet" href="estilos/tv.css" media="screen and (min-width: 1501px)">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu Site</h1>
         <div id="burger" class="material-symbols-outlined" onclick="ClickMenu()">menu</div>
@@ -56,6 +56,15 @@
            } else{
             script.style.display = 'block'
            }  
+        }
+
+        function mudoutamanho(){
+            if (window.innerWidth >= 768){
+                script.style.display = 'block'
+            } else{
+                script.style.display = 'none'
+            }
+
         }
     </script>
 </body>
