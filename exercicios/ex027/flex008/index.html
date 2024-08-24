@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            background-color: lightgrey;
+        }
+
+        .conteiner{
+            background-color: cornflowerblue;
+            margin: 30px auto;
+            width: 90vw;
+            height: 300px;
+            border: 1px solid rgb(62, 18, 102);
+
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: stretch;
+        }
+
+        .item{
+            background-color: blueviolet;
+            border: 2px solid rgb(62, 18, 102);
+            text-align: center;
+            color: white;
+            padding: 15px;
+        }
+
+        #o1{
+            order: 1;
+            align-self: auto;
+        }
+        #o2{
+            order: 2;
+            align-self: flex-start;
+        }
+        #o3{
+            order: 3;
+            align-self: center;
+        }
+        #o4{
+            order: 4;
+            align-self: flex-end;
+        }
+        #o5{
+            order: 5;
+            align-self: center;
+        }
+        #o6{
+            order: 6;
+            align-self: flex-start;
+        }
+        #o7{
+            order: 7;
+            align-self: stretch;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="o1">1</div>
+        <div class="item" id="o2">2</div>
+        <div class="item" id="o3">3</div>
+        <div class="item" id="o4">4</div>
+        <div class="item" id="o5">5</div>
+        <div class="item" id="o6">6</div>
+        <div class="item" id="o7">7</div>
+    </div>
+</body>
+</html>
