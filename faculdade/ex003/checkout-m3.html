@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Capturando variáveis de formulário HTML com JavaScript</title>
+</head>
+<body>
+    <!-- Titulo da Página -->
+    <header>
+        <h1>Exemplo de Interação entre HTML e JavaScript (sem CSS)</h1>
+        <h2>Capturando variáveis de formulário HTML com JavaScript</h2>
+    </header>
+
+    <!-- Definição de um formulário -->
+    <form action="" method="post" id="myform">
+        <div>
+            <label for="num1">
+                Número 1: <br>
+                <input type="text" name="num1" id="numero1" required>
+            </label>
+        </div>
+        <div>
+            <label for="num2">
+                Número 2: <br>
+                <input type="text" name="num2" id="numero2" required>
+            </label>
+        </div>
+        <div>
+            <button type="submit" id="somarBtn">Somar</button>
+            <button type="submit" id="menosBtn">Subtrair</button>
+
+            <button type="submit" id="multibtn">Multiplicar</button>
+            <button type="submit" id="divbtn">Dividir</button>
+        </div>
+    </form>
+    <hr>
+    <footer>
+        <h1 id="resultado">Resultado: </h1>
+    </footer>
+    <hr>
+    <script src="checkout-m3.js"></script>
+</body>
+</html>
